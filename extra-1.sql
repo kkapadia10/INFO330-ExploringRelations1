@@ -1,1 +1,2 @@
-SELECT age FROM persons WHERE (gender = 'Female' AND title = 'Dr' AND city = 'West Palm Beach' ') OR (gender = 'Male' AND title = 'Rev' AND city = 'Phoenix' ');
+SELECT (SELECT age FROM people WHERE title = 'Dr' AND gender = 'Female' AND city = 'West Palm Beach' AND state = 'Florida') = 
+       (SELECT age FROM people WHERE title = 'Rev' AND gender = 'Male' AND city = 'Phoenix' AND state = 'Arizona') AS same_age;
