@@ -1,0 +1,1 @@
+INSERT INTO persons (first_name, last_name, email, gender, title, age, address, city, state, postalcode, phone) VALUES('Kaden', 'Kapadia', 'kadenk10@uw.edu', 'Male', 'Mr', 18, '22245 Canyon View Circle', 'Cupertino', 'California', '95014', '408-800-8580')
